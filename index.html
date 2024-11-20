@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Diary - Nadine Mamlouk</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFD1DC; /* Soft pink background */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #FF6F91;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        /* Content Container */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+            animation-delay: 0.8s;
+        }
+
+        h2 {
+            color: #FF6F91;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideIn 1.2s ease-in-out forwards;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            opacity: 0;
+            transform: translateX(30px);
+            animation: slideIn 1.2s ease-in-out forwards;
+            animation-delay: 0.4s;
+        }
+
+        .dog-photo {
+            text-align: center;
+            margin: 20px 0;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: zoomIn 1.5s ease-in-out forwards;
+            animation-delay: 1.2s;
+        }
+
+        .dog-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #555;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+            animation-delay: 1.5s;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Nadine Mamlouk</header>
+    <div class="content">
+        <h2>Our Story</h2>
+        <p>
+            I first met Nadine on <strong>October 31</strong>. Her favorite colors are red and blue, which somehow reflect her vibrant and calm nature perfectly. 
+            Nadine’s birthday is on <strong>November 22</strong>, a day as special as she is.
+        </p>
+        <h2>Why I Love Her</h2>
+        <p>
+            Nadine is not just beautiful , she is more than beautiful – in fact, that’s not why I fell for her. It’s her childishness, her ability to be as weird, crazy, and stupid as me that captured my heart. She’s everything I’ve ever dreamed of and more. I love to talk with her even though there is 5 hour time difference between our countries.
+        </p>
+        <h2>Her Dreams</h2>
+        <p>
+           Being from Tunisia , Nadine dreams of becoming a successful model and a beauty social media influencer one day. She has the determination, charm, and talent to achieve her goals.  
+            I believe in her with all my heart and will always support her, every step of the way. 
+        </p>
+        <h2>Her Hobbies & Quirks</h2>
+        <p>
+            Nadine loves writing and has a passion for expressing herself through words. Though she usually hates flowers, she has a soft spot for roses. She really loves the country Spain very much. She also loves to go for a run every now and then .
+        </p>
+        <h2>Oreo - Her Adorable Husky</h2>
+        <p>
+            Nadine has a cute dog named <strong>Oreo</strong>, a beautiful husky with different-colored eyes. Oreo is as unique and special as she is!
+        </p>
+        <div class="dog-photo">
+            <img src="oreo.jpg" alt="Oreo the Husky">
+        </div>
+    </div>
+    <footer>
+        Made with love for Nadine.
+    </footer>
+</body>
+</html>
